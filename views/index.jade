@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header.headerContainer 
+    h1= title
+    p Welcome to #{title}
+  block section
+    section
+      h3 Usage
+      p Retrive a full list of Polish profanity words
+      pre
+        code.link.get
+          a(href="/api/profanity") https://wulgaryzmy-api.onrender.com/api/profanity
+      p Example response:
+      pre
+        code.language-json
+          | [
+          |   "chuj",
+          |   "chuja",
+          |   "chujek",
+          |   ...
+          |  ]

@@ -5,10 +5,54 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #333;
+  color: #eee;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+header {
+  margin: 2rem 0;
+}
+
+pre {
+  margin: 1rem 0;
+}
+
+code {
+  padding: 0.5rem;
+}
+
+code.link {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+code.get::before {
+  content: "GET";
+  color: #ff0051;
+  margin-right: 0.45rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
