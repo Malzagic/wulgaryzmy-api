@@ -2,7 +2,7 @@ extends layout
 
 block content
   header.headerContainer 
-    h1= title
+    h1= title + " " + api
     p Welcome to #{title}
   block section
     section
@@ -20,7 +20,7 @@ block content
           |   "chujek",
           |   ...
           |  ]
-      p Retrive a profanityw word by typing a letter
+      p Retrive a profanity word by typing a letter
       pre
         code.link.get
           a(href="/api/profanity/u") https://wulgaryzmy-api.onrender.com/api/profanity/"u"
