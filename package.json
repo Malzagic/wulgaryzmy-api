@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "run dev": "node ./bin/www",
+    "dev": "node ./bin/www",
     "start": "nodemon ./bin/www",
     "build": "npm install"
   },
