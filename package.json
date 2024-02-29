@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "run dev": "node ./bin/www",
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "build": "npm install"
   },
   "license": "MIT",
   "author": "Przemysław Młoczkowski",
