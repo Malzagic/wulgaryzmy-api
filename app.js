@@ -7,6 +7,7 @@ import logger from "morgan";
 import indexRouter from "./routes/index.js";
 import profanity from "./routes/profanity.js";
 import searchByletter from "./routes/searchByLetter.js";
+import randomWord from "./routes/randomWord.js";
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/api/profanity", profanity);
+app.use("/api/profanity/random", randomWord);
 app.use("/api/profanity", searchByletter);
 
 // catch 404 and forward to error handler

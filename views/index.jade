@@ -33,6 +33,16 @@ block content
           |   "ujebal",
           |   ...
           |  ]
+      p Retrive a random profanity word
+      pre
+        code.link.get
+          a(href="/api/profanity/u") https://wulgaryzmy-api.onrender.com/api/profanity/random
+      p Example response:
+      pre
+        code.language-json
+          | {
+          |   random: "ojebać"
+          |  }
   footer
     small
       p Copyrights &copy; PMdev 2024
