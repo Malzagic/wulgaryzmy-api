@@ -20,3 +20,16 @@ block content
           |   "chujek",
           |   ...
           |  ]
+      p Retrive a profanityw word by typing a letter
+      pre
+        code.link.get
+          a(href="/api/profanity/u") https://wulgaryzmy-api.onrender.com/api/profanity/"u"
+      p Example response:
+      pre
+        code.language-json
+          | [
+          |   "udupić",
+          |   "ujebac",
+          |   "ujebal",
+          |   ...
+          |  ]
