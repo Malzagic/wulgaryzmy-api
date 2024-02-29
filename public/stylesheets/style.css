@@ -10,12 +10,16 @@ body {
   background-color: #333;
   color: #eee;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  width: 100vw;
   min-height: 100vh;
 }
 
 a {
   color: #00b7ff;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #eee;
 }
 
 p {
@@ -45,6 +49,40 @@ code.get::before {
   margin-right: 0.45rem;
 }
 
+small {
+  text-align: center;
+}
+
+i { 
+  color: #eee;
+}
+
+span {
+  font-size: 12px;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5px;
+  margin: 0 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  transition: all .3s ease-in-out;
+}
+.btn.icons {
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 600px;
@@ -53,6 +91,12 @@ code.get::before {
 .headerContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-box {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
